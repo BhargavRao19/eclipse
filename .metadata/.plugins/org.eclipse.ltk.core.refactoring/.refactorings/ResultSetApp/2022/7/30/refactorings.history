@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;ResultSetApp&apos;&#x0D;&#x0A;- Original project: &apos;ResultSetApp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.abc.bhargav.persistence2.DeleteRecordApp.java&#x0D;&#x0A;     com.abc.bhargav.persistence2.MultipleRecordInsertionApp.java&#x0D;&#x0A;     com.abc.bhargav.persistence2.SelectAppUsingPreparedStatement.java" description="Delete elements" element1="/src&lt;com.abc.bhargav.persistence2{DeleteRecordApp.java" element2="/src&lt;com.abc.bhargav.persistence2{MultipleRecordInsertionApp.java" element3="/src&lt;com.abc.bhargav.persistence2{SelectAppUsingPreparedStatement.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1658387792812" subPackages="false" version="1.0"/>
+</session>

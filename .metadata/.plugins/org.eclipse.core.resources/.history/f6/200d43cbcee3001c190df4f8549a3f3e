@@ -1,0 +1,10 @@
+package com.abc.bhargav.persistence1;
+
+public class InsertApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

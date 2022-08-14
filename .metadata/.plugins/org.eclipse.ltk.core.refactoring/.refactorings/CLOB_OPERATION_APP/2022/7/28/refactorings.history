@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.abc.utility&apos; to &apos;CALLABLSTATEMENTAPP/src&apos;&#x0D;&#x0A;- Original project: &apos;CLOB_OPERATION_APP&apos;&#x0D;&#x0A;- Destination element: &apos;CALLABLSTATEMENTAPP/src&apos;&#x0D;&#x0A;- Original element: &apos;CLOB_OPERATION_APP/src/com.abc.utility&apos;" description="Copy package" destination="=CALLABLSTATEMENTAPP/src" element1="/src&lt;com.abc.utility" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1657176501918" version="1.0"/>
+</session>

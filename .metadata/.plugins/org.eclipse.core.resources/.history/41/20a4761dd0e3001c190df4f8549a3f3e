@@ -1,0 +1,33 @@
+package com.abc.bhargav.persistence1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class InsertApp {
+
+	public static void main(String[] args) {
+	Connection connection=null;
+	PreparedStatement pstmt=null;
+	Scanner scanner=null;
+	
+	String url="jdbc:mysql://localhost:3309/xyz";
+	String username="root";
+	String password="admin";
+	
+try {
+	//step1:Establishing the connection by providing URL,USERNAME AND PASSWORD
+	connection =DriverManager.getConnection(url,username,password);
+	System.out.println("Connection established with the following:"+url);
+	
+	
+	
+	
+	
+			}catch(Exception e) {
+	
+}
+	}
+
+}

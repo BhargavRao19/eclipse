@@ -1,0 +1,63 @@
+package com.abc.bhargav_program;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class FrontEndPractice extends JFrame {
+    private static final String GET_STUDENT_RECORD ="select sid,sname,saddress,savg from student";
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FrontEndPractice frame = new FrontEndPractice();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+    Connection connection  =null;
+    PreparedStatement pstmt = null;
+    ResultSet resultSet=null;
+	private void JdbcInitialize() {
+		try {
+			String url="jdbc:mysql://localhost:3307/xyz";
+			String username="root";
+			String password="admin";
+			
+			connection = DriverManager.getConnection(url,username,password);
+			if(connection != null) {
+				pstmt = connection.prepareStatement(GET_STUDENT_RECORD);
+			}
+			if(pstmt !=null) {
+				resultSet = pstmt.executeQuery();
+			}
+		}catch(SQLException se) {
+			se.printStackTrace();
+		}
+	}
+	public FrontEndPractice() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+	}
+
+}

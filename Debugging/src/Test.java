@@ -1,0 +1,22 @@
+
+public class Test {
+public static void main(String[] args) {
+	int a=10;
+	show();
+	a= a++ + ++a - ++a + a++;
+	if(a>35) {
+		System.out.println("Valid");
+	}else {
+		System.out.println("Invalid");
+	}
+	System.out.println("Done");
+}
+	public static void show() {
+		int k=10;
+		k = k-- + ++k + k++;
+		System.out.println("The value of k is: "+k);
+		System.out.println("From show method");
+		
+	}
+
+}
